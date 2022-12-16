@@ -53,7 +53,7 @@ mandatory
 In most projects, we often give you only one main file to test with. For example, this main file is a test for a postitive_or_negative() function similar to the one you worked with in an earlier C project:
 
 carrie@ubuntu:/debugging$ cat main.c
-# include "main.h"
+#include "main.h"
 
 /**
 
@@ -73,14 +73,14 @@ int main(void)
 carrie@ubuntu:/debugging$
 
 carrie@ubuntu:/debugging$ cat main.h
-# ifndef MAIN_H
-# define MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 
-# include <stdio.h>
+#include <stdio.h>
 
 void positive_or_negative(int i);
 
-# endif /*MAIN_H*/
+#endif /*MAIN_H*/
 carrie@ubuntu:/debugging$
 
 carrie@ubuntu:/debugging$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c main.c
