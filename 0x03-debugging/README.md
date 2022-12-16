@@ -117,7 +117,7 @@ Copy this main file. Comment out (don’t delete it!) the part of the code that 
     You do not have to compile with -Wall -Werror -Wextra -pedantic for this task.
 
 carrie@ubuntu:/debugging$ cat 1-main.c
-# include <stdio.h>
+#include <stdio.h>
 
 /**
 
@@ -166,8 +166,8 @@ mandatory
 This program prints the largest of three integers.
 
 carrie@ubuntu:/debugging$ cat 2-main.c
-# include <stdio.h>
-# include "main.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
 
@@ -193,7 +193,7 @@ int main(void)
 carrie@ubuntu:/debugging$
 
 carrie@ubuntu:/debugging$ cat 2-largest_number.c
-# include "main.h"
+#include "main.h"
 
 /**
 
@@ -249,8 +249,8 @@ mandatory
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
 
 carrie@ubuntu:/debugging$ cat 3-main_a.c
-# include <stdio.h>
-# include "main.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
 
@@ -281,7 +281,7 @@ int main(void)
 carrie@ubuntu:/debugging$
 
 carrie@ubuntu:/debugging$ cat 3-convert_day.c
-# include "main.h"
+#include "main.h"
 
 /**
 
@@ -338,8 +338,8 @@ int convert_day(int month, int day)
 carrie@ubuntu:/debugging$
 
 carrie@ubuntu:/debugging$ cat 3-print_remaining_days.c
-# include <stdio.h>
-# include "main.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
 
