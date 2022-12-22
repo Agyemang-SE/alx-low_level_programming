@@ -1,22 +1,28 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _strcat - function concatenates
- * @dest: string to append with nad return
- * @src: string to append to
+ * _strcat - concatenates two strings
  *
- * Return: dest for success
+ * @dest: string to append to
+ * @src: string to add
+ *
+ * Return: a pointer to the resulting string
  */
 
 char *_strcat(char *dest, char *src)
 {
-int len1, len2, i;
-len1 = strlen(dest);
-len2 = strlen(src);
-for (i = 0; i < len2; i++)
+int x = 0;
+int y = 0;
+
+while (dest[x])
 {
-dest[len1 + i] = src[i];
+x++;
+}
+while (src[y])
+{
+dest[x] = src[y];
+x++;
+y++;
 }
 return (dest);
 }
