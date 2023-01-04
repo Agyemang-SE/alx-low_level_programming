@@ -3,9 +3,9 @@
 
 /**
  * _strpbrk - function searches a string for any of a set of bytes.
- * @s: string 
- * @accpept: the string to be accepted
- * 
+ * @s: string
+ * @accept: the string to be accepted
+ *
  * Return: pointer to the byte in s that matches on one of the byte
 */
 char *_strpbrk(char *s, char *accept)
