@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * main - function multiplies to numbers
@@ -23,8 +22,7 @@ if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-int a = strtol(argv[i], NULL, 10);
-res = res *a;
+res = res *atoi(argv[i]);
 }
 printf("%d\n", res);
 }
