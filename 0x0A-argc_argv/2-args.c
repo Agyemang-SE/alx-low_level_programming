@@ -4,7 +4,7 @@
  * main - functions prints cmd arguments
  * @argc: argument count
  * @argv: argument vector
- * 
+ *
  * Return: 0 on success
 */
 

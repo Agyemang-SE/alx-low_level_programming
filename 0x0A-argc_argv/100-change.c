@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the minimum number of coins to make change for an amount of money.
+ * main - Prints the minimum number of coins to make change.
  *
  * @argc: argument count.
  * @argv: argument vector.
@@ -10,6 +10,7 @@
  * Return: If the number of arguments is not exactly one - 1.
  *         Otherwise - 0.
  */
+
 int main(int argc, char *argv[])
 {
 int cents, coins = 0;
