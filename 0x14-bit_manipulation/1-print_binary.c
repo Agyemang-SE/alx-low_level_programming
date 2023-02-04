@@ -5,7 +5,7 @@
  * print_binary - function prints binary representation
  * of a number
  * @n: number parameter
- */ 
+ */
 
 void print_binary(unsigned long int n)
 {

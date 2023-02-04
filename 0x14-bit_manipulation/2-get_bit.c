@@ -5,7 +5,7 @@
  *  of a bit at a given index
  * @n: integer parameter
  * @index: position 
- * 
+ *
  * Return: index'th bit
 */
 
