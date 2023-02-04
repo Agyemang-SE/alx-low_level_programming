@@ -9,13 +9,8 @@
 
 void print_binary(unsigned long int n)
 {
-unsigned long int i;
-unsigned long int mask = 1u << 31;
 
-for (i = 0; i < 32; i++)
-{
-_putchar(((n & mask) == 0) ? '0' : '1');
-n <<= 1;
-}
-_putchar('\n');
+if (n > 1)
+print_binary(n >> 1);
+_putchar((n & 1) + '0');
 }
