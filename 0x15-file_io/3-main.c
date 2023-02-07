@@ -15,7 +15,6 @@
      }
 
      read_file(argv[1]);
-     copy_file(argv[1], argv[2]);
+     cp_file(argv[1], argv[2]);
      return 0;
  }
- 
