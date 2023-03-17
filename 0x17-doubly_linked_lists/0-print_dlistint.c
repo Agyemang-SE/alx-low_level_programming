@@ -3,7 +3,7 @@
 /**
  * print_dlistint - function the prints all the elements
  * @h: pointer parameter to d-linked
- * 
+ *
  * Return: the number of nodes
 */
 
@@ -15,7 +15,7 @@ if (h == NULL)
 {
 return (0);
 }
-for (i = 0; h!= NULL; i++)
+for (i = 0; h != NULL; i++)
 {
 printf("%i\n", h->n);
 h = h->next;

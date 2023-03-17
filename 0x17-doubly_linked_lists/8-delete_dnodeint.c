@@ -8,9 +8,11 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-    if (h)
-        return (1 + dlistint_len(h->next));
-    return (0);
+if (h)
+{
+return (1 + dlistint_len(h->next));
+}
+return (0);
 }
 /**
  * delete_dnodeint_at_index - Deletes node of a dlistint_t linked list.
@@ -21,32 +23,39 @@ size_t dlistint_len(const dlistint_t *h)
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-    dlistint_t *tmp = *head;
-    unsigned int i = 0;
+dlistint_t *tmp = *head;
+unsigned int i = 0;
 
-    if (*head == NULL || dlistint_len(tmp) < index + 1)
-        return (-1);
-    if (index == 0)
-    {
-        if (tmp->next)
-            tmp->next->prev = NULL;
-        (*head) = (*head)->next;
-        free(tmp);
-        return (1);
-    }
+if (*head == NULL || dlistint_len(tmp) < index + 1)
+{
+return (-1);
+}
+if (index == 0)
+{
+if (tmp->next)
+{
+tmp->next->prev = NULL;
+}
+(*head) = (*head)->next;
+free(tmp);
+return (1);
+}
 
-    while (tmp && i < index)
-    {
-        tmp = tmp->next;
-        i++;
-    }
+while (tmp && i < index)
+{
+tmp = tmp->next;
+i++;
+}
 
-    if (tmp == NULL)
-        return (-1);
-
-    tmp->prev->next = tmp->next;
-    if (tmp->next)
-        tmp->next->prev = tmp->prev;
-    free(tmp);
-    return (1);
+if (tmp == NULL)
+{
+return (-1);
+}
+tmp->prev->next = tmp->next;
+if (tmp->next)
+{
+tmp->next->prev = tmp->prev;
+}
+free(tmp);
+return (1);
 }
