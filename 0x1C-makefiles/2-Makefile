@@ -1,0 +1,14 @@
+#name of executable school
+#rules: all builds your executable
+#variables: CC(compiler to be used)
+#SRC(Source files) OBJ(object files) NAME(name of executable)
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:%.c=%.o)
+NAME = school
+
+all: open
+
+open: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
