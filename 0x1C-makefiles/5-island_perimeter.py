@@ -3,7 +3,7 @@
 Use this module for get the island perimeter
 Functions
 ---------
-     insland_perimeter(grid)
+     island_perimeter(grid)
 """
 
 
