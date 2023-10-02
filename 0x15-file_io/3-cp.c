@@ -104,9 +104,10 @@ if (res == -1)
 exit(error_handler(res, argv[2], WRITE_ERROR, buffer));
 fd_dest = open(argv[2], O_RDWR | O_APPEND);
 if (fd_dest == -1)
-			exit(error_handler(fd_dest, argv[2], WRITE_ERROR, buffer));
+exit(error_handler(fd_dest, argv[2], WRITE_ERROR, buffer));
 
-} while (res > 0);
+}
+while (res > 0);
 close_file(fd_src);
 close_file(fd_dest);
 free(buffer);
